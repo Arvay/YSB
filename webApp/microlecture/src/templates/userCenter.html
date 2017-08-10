@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/userCenter.css"/>
+		<script src="../js/mui.min.js"></script>
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="mui-scroll-wrapper">
+		        <div class="mui-scroll">
+		        	<div class="banner">
+		        		<div class="banenrBac1"></div>
+		        		<div class="banenrBac2"></div>
+		        		<div class="userIco"></div>
+		        	</div>
+		        	<div class="myCourseList">
+		        		<ul>
+		        			<li>
+		        				<img class="listIco" src="images/mydinggou.png"/>
+		        				<span>我的订阅</span>
+		        				<img class="next" src="images/nextRight.png"/>
+		        			</li>
+		        			<li>
+		        				<img class="listIco" src="images/mymiru.png"/>
+		        				<span>我的购买</span>
+		        				<img class="next" src="images/nextRight.png"/>
+		        			</li>
+		        			<li>
+		        				<img class="listIco" src="images/guanyu.png"/>
+		        				<span>关于我们</span>
+		        				<img class="next" src="images/nextRight.png"/>
+		        			</li>
+		        			
+		        		</ul>
+		        	</div>
+		        </div>
+		    </div>
+		    
+		</div>
+	</body>
+<script type="text/javascript">
+	/**
+	 * @Author: Arvay
+	 * @Date:   2017年8月5日14:55:09
+	 * @Last modified by:   Arvay
+	 * @Last modified time: 2017年8月5日14:55:13
+	 */
+	document.addEventListener("touchmove", function(event) {//阻止手机默认滚动
+	      event.preventDefault();
+	     }, false);
+	window.onload = function(){
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: true, //是否竖向滚动
+			 scrollX: false, //是否横向滚动
+			 startX: 0, //初始化时滚动至x
+			 startY: 0, //初始化时滚动至y
+			 indicators: true, //是否显示滚动条
+			 deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+			 bounce: true, //是否启用回弹,
+		});
+	}
+</script>
+</html>

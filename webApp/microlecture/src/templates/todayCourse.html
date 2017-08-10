@@ -1,0 +1,87 @@
+<!--
+ * @Author: Arvay
+ * @Date:   2017年8月5日16:26:45
+ * @Last modified by:   Arvay
+ * @Last modified time: 2017年8月5日16:26:47
+ *-->
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>今日课程</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/todayCourse.css"/>
+		<script src="../js/mui.min.js"></script>
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="main">
+				<div class="header">
+					<img class="userIco" src="images/arvay.jpg"/>
+					<h2>脚踏青山</h2>
+					<h3>你已学习6天继续加油</h3>
+					<div class="date">07/28</div>
+				</div>
+				<div class="listTitle">我的课程</div>
+				<div class="courseList">
+					<ul class="myCourse">
+						<li>
+							<img class="teacherIco" src="images/arvay.jpg"/>
+							<h1>【考研冲刺班】词汇精讲</h1>
+							<span class="teacherName">刘彬</span>
+							<div class="number"><img src="images/shouting.png"/><span>收听1000次</span></div>
+							<img class="todaNext" src="images/nextRight.png"/>
+						</li>
+						<li>
+							<img class="teacherIco" src="images/arvay.jpg"/>
+							<h1>【考研冲刺班】词汇精讲</h1>
+							<span class="teacherName">刘彬</span>
+							<div class="number"><img src="images/shouting.png"/><span>收听1000次</span></div>
+							<img class="todaNext" src="images/nextRight.png"/>
+						</li>
+					</ul>
+				</div>
+				<div class="listTitle">推荐课程</div>
+				<div class="courseList">
+					<ul class="recommend">
+						<li>
+							<img class="teacherIco" src="images/arvay.jpg"/>
+							<h1>【考研冲刺班】词汇精讲</h1>
+							<span class="teacherName">刘彬</span>
+							<div class="number"><img src="images/shouting.png"/><span>收听1000次</span></div>
+							<img class="todaNext" src="images/nextRight.png"/>
+						</li>
+						<li>
+							<img class="teacherIco" src="images/arvay.jpg"/>
+							<h1>【考研冲刺班】词汇精讲</h1>
+							<span class="teacherName">刘彬</span>
+							<div class="number"><img src="images/shouting.png"/><span>收听1000次</span></div>
+							<img class="todaNext" src="images/nextRight.png"/>
+						</li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+	</body>
+<script type="text/javascript">
+	/**
+	 * @Author: Arvay
+	 * @Date:   2017年8月5日16:28:48
+	 * @Last modified by:   Arvay
+	 * @Last modified time: 2017年8月5日16:28:50
+	 */
+	window.onload = function(){
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: true, //是否竖向滚动
+			 scrollX: false, //是否横向滚动
+			 startX: 0, //初始化时滚动至x
+			 startY: 0, //初始化时滚动至y
+			 indicators: true, //是否显示滚动条
+			 deceleration:0.0006, //阻尼系数,系数越小滑动越灵敏
+			 bounce: true //是否启用回弹
+		});
+	};
+</script>
+</html>

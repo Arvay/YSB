@@ -1,0 +1,94 @@
+body{font-family:"微软雅黑","Arial Narrow",HELVETICA;text-align:center;margin:0 auto;padding:0;font-size:12px;}
+div,form,ul,ol,li,span,p,dl,dd,dt{margin:0;padding:0;border:0;}
+img,a img{border:0;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}
+ul,ol,li{list-style:none}
+body,html,.mui-content{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #edf3ed;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	height: 2.28rem;
+	background: url(../images/tom.jpg);
+	background-size: 100% 100%;
+}
+.banenrBac1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1.4rem;
+	height: 1.4rem;
+	margin-top: -0.7rem;
+	margin-left: -0.7rem;
+	background: #fff;
+	border-radius: 50%;
+	opacity: 0.3;
+}
+.banenrBac2{
+	position: absolute;
+	width: 1.16rem;
+	height: 1.16rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -0.58rem;
+	margin-left: -0.58rem;
+	background: #fff;
+	opacity: .4;
+	border-radius: 50%;
+}
+.myCourseList{
+	float:left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding:  0 0.24rem;
+}
+.myCourseList ul{
+	float: left;
+	margin-top: 0.12rem;
+}
+.myCourseList li{
+	position: relative;
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+	float: left;
+	margin-top: 0.16rem;
+	border-radius: 0.10rem;
+	text-align: left;
+}
+.myCourseList .next{
+	position: absolute;
+	float: right;
+	width: 0.16rem;
+	top: 50%;
+	right: 0.26rem;
+	margin-top: -0.14rem;
+}
+.userIco{
+	position: absolute;
+	width: 0.96rem;
+	height: 0.96rem;
+	top: 50%;
+	left: 50%;
+	margin-left: -0.48rem;
+	margin-top: -0.48rem;
+	border-radius: 50%;
+	background: url(../images/arvay.jpg);
+	background-size: 100% 100%;
+}
+.listIco{
+	float: left;
+	width: 0.5rem;
+	height: 0.5rem;
+	margin: 0.18rem 0.28rem 0 0.18rem;
+}
+.myCourseList li span{
+	font-size: 0.26rem;
+	color: #4b4b4b;
+	line-height: 0.9rem;
+}
