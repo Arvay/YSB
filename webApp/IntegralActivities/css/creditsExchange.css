@@ -45,13 +45,16 @@ body,html,.content{
 .search input{
 	width: 5rem;
 	height: 0.6rem;
-	margin-left: 0.24rem;
 	outline: none;
-	border: none;
+	border: none !important;
 	margin-top: 0.12rem;
 	font-size: 0.28rem;
 	color: #727272;
 	float: left;
+	
+}
+.search span{
+	top: 0.28rem !important;
 }
 .search img{
 	float: left;
@@ -108,7 +111,7 @@ body,html,.content{
 	background: #FFF7E0;
 }
 .couponList li{
-	width: 2.95rem;
+	width: 2.94rem;
 	height: 0.64rem;
 	line-height: 0.64rem;
 	text-align: center;
