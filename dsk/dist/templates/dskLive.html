@@ -1,0 +1,324 @@
+<style type="text/css">
+	.liveTab,
+	.liveBox {
+		float: left;
+	}
+	
+	.liveTab h1 {
+		text-align: left;
+		font-size: 16px;
+		color: #373B3F;
+		letter-spacing: 0;
+		line-height: 16px;
+		margin-bottom: 14px;
+	}
+	
+	.liveTab li {
+		cursor: pointer;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 20px;
+		text-align: left;
+		font-size: 14px;
+		color: #656565;
+		width: 200px;
+		height: 48px;
+		letter-spacing: 0;
+		line-height: 14px;
+		line-height: 48px;
+		border-bottom: 1px solid #E5E5E5;
+	}
+	
+	.liveRight {
+		float: left;
+		margin-left: 40px;
+		/*display: none;*/
+		width: 80%;
+	}
+	
+	.liveNext {
+		float: left;
+		margin-left: 40px;
+		display: none;
+	}
+	
+	.liveRight h1,
+	.liveNext h1 {
+		text-align: left;
+		font-size: 18px;
+		color: #373B3F;
+		line-height: 20px;
+	}
+	
+	.liveRightUl {
+		float: left;
+	}
+	
+	.liveRightUl li {
+		cursor: pointer;
+		width: 290px;
+		float: left;
+		margin-right: 14px;
+		margin-top: 30px;
+	}
+	
+	.liveRightUl li:hover,
+	.swiper-wrapper div:hover {
+		-webkit-box-shadow: 0px 2px 10px #666;
+		-moz-box-shadow: 0px 2px 10px #666;
+		box-shadow: 0px 2px 10px #666;
+	}
+	
+	.addHover {
+		-webkit-box-shadow: 0px 2px 10px #666;
+		-moz-box-shadow: 0px 2px 10px #666;
+		box-shadow: 0px 2px 10px #666;
+	}
+	
+	.liveRightUl img {
+		display: inline-block;
+		width: 290px;
+		height: 162px;
+	}
+	
+	.liveRightUl span {
+		display: inline-block;
+		height: 36px;
+		font-size: 16px;
+		color: #373B3F;
+		letter-spacing: 0;
+		line-height: 36px;
+	}
+	
+	.dskVideo {
+		width: 928px;
+		height: 522px;
+		margin: 30px 0 20px 0;
+	}
+	
+	.dskVideo span {
+		line-height: 522px;
+		text-align: center;
+		font-size: 20px;
+		color: #5F666E;
+		display: none;
+	}
+	
+	.dskVideoBorder {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		background: #F7F7F7;
+		border: 1px solid #CCCCCC;
+	}
+	
+	.dskVideoBorder span {
+		display: block;
+	}
+	
+	.videoTitle {
+		width: 902px;
+		font-size: 16px;
+		color: #5F666E;
+		text-align: left;
+		overflow: hidden;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: none !important;
+	}
+	
+	.liveTabAdd {
+		color: #FF893A !important;
+	}
+	
+	.liveSwiper {
+		height: 210px;
+		width: 928px;
+		margin-top: 40px;
+	}
+	
+	.swiper-container {
+		float: left;
+		width: 100%;
+		height: 210px;
+		overflow: hidden;
+	}
+	
+	.swiper-slide {
+		height: 198px !important;
+	}
+	
+	.swiper-wrapper div {
+		width: 290px !important;
+	}
+	
+	.swiper-slide img {
+		display: inline-block;
+		height: 162px;
+		width: 100%;
+	}
+	
+	.swiper-slide span {
+		display: inline-block;
+		height: 36px;
+		width: 100%;
+		line-height: 32px;
+		text-align: center;
+		font-size: 16px;
+		color: #373B3F;
+	}
+	
+	.swiper-button-next,
+	.swiper-button-prev {
+		width: 14px !important;
+		height: 46px !important;
+		background-size: 100% 100%;
+		margin-top: -42px !important;
+	}
+	#id_test_video{
+		/*display: none !important;*/
+	}
+</style>
+<div class="liveBox">
+	<div class="liveTab">
+		<h1>活动咨询</h1>
+		<ul>
+			<li>公益视频</li>
+			<li>公益直播</li>
+		</ul>
+	</div>
+	<div class="liveRight">
+		<h1>活动视频</h1>
+		<ul class="liveRightUl">
+			<li>
+				<img src="static/images/film_img_1.png" />
+				<span>15秒疾病教育篇</span>
+			</li>
+			<li>
+				<img src="static/images/film_img_2.png" />
+				<span>15秒悬疑篇</span>
+			</li>
+			<li>
+				<img src="static/images/film_img_3.png" />
+				<span>15秒情感篇</span>
+			</li>
+			<li>
+				<img src="static/images/film_img_4.png" />
+				<span>MV</span>
+			</li>
+		</ul>
+	</div>
+	<div class="liveNext">
+		<h1>活动直播</h1>
+		<div class="dskVideo">
+			<span>尚未发布，敬请期待</span>
+			<div id="id_test_video" style="width:100%; height:auto;"></div>
+		</div>
+		<div class="videoTitle">那些时代，早已远去。未来，却变幻莫测、充满未知。这就是我必须接受的命运吗？趁年轻 预防宫颈癌 即刻行动 保护她</div>
+		<div class="liveSwiper">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="static/images/Page 1.png" />
+						<span>15秒疾病教育篇</span>
+					</div>
+					<div class="swiper-slide">
+						<img src="static/images/film_img_1.png" />
+						<span>15秒悬疑篇</span>
+					</div>
+					<div class="swiper-slide">
+						<img src="static/images/film_img_2.png" />
+						<span>15秒情感篇</span>
+					</div>
+					<div class="swiper-slide">
+						<img src="static/images/film_img_3.png" />
+						<span>MV</span>
+					</div>
+				</div>
+				<!-- 如果需要导航按钮 -->
+				<div class="swiper-button-prev  swiper-button-white"></div>
+				<div class="swiper-button-next  swiper-button-white"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var mySwiper = new Swiper('.swiper-container', {
+		direction: 'horizontal',
+		slidesPerView: 3,
+		spaceBetween: 30,
+		// 如果需要前进后退按钮
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+	});
+	var player;
+	setTimeout(function(){
+		player = new TcPlayer('id_test_video', {
+		"mp4": "static/images/xuanyi.mp4", //增加了一个flv的播放地址，用于PC平台的播放 请替换成实际可用的播放地址
+		"autoplay": false, //iOS下safari浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+		"width": '928', //视频的显示宽度，请尽量使用视频分辨率宽度
+		"height": '522' //视频的显示高度，请尽量使用视频分辨率高度
+	});
+	},2000)
+	$(".liveTab li").click(function() {
+		player.pause();//暂停视频
+		var index = $(this).index();
+		$(this).addClass('liveTabAdd').siblings().removeClass('liveTabAdd');
+		if(index == 0) {
+			zhiboShow();
+			$(".liveNext").hide();
+		} else {
+			zhiboHiden();
+			$(".liveNext").show();
+		}
+	});
+	//观看视频
+	$(".liveRight li").click(function(){
+		mySwiper.update();
+		player.play();//開始播放
+		$(".liveNext,#id_test_video").show();
+		$(".liveRight").hide();
+	});
+	$(".el-ul").on('click', 'span', function() {
+		$(".contactUsBox").hide(); //联系我们
+		var _html = $(this).attr('class');
+		if(_html == 'teb2_1') {
+			mySwiper.update();
+			$(".liveTab li").eq(0).addClass('liveTabAdd').siblings().removeClass('liveTabAdd');
+			$(".liveNext").hide();
+			zhiboShow();
+		} else if(_html == 'teb2_2') {
+			$(".liveNext").show();
+			$(".liveTab li").eq(1).addClass('liveTabAdd').siblings().removeClass('liveTabAdd');
+			zhiboHiden();
+		}
+	});
+	var vali = 1;
+	function zhiboShow() {
+		$(".indexBox").hide();
+		$(".dskVideo").removeClass('dskVideoBorder');
+		$(".videoTitle,.liveSwiper,.liveRight,.indexLive").show();
+	};
+	var val = setInterval(function() {
+		mySwiper.update();
+		vali++;
+		if(vali > 30) {
+			clearInterval(val)
+		}
+	}, 400)
+
+	function zhiboHiden() {
+		$(".indexLive").show();
+		$(".dskVideo").addClass('dskVideoBorder');
+		$(".videoTitle,.liveSwiper,#id_test_video,.liveRight,.indexBox").hide();
+		var val = setInterval(function() {
+			mySwiper.update();
+			vali++;
+			if(vali > 6) {
+				clearInterval(val)
+			}
+		}, 800)
+	}
+</script>
