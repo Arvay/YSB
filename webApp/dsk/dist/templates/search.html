@@ -1,0 +1,116 @@
+<style type="text/css">
+	.searchTitle{
+		overflow: hidden;
+		text-align: left;
+		font-size: 18px;
+		color: #373B3F;
+		margin-top: 32px;
+	}
+	.result{
+		font-size: 18px;
+		color: #FF893A;
+		border-bottom: 1px solid #E5E5E5;
+		text-align: left;
+		line-height: 50px;
+		margin-left: 20px;
+	}
+	.searchListBox{
+		overflow: hidden;
+		margin-top: 30px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 20px;
+	}
+	.searchList li{
+		height: 134px;
+		width: 100%;
+		overflow: hidden;
+		float: left;
+		text-align: left;
+		margin-bottom: 50px;
+	}
+	.searchList li img{
+		width: 238px;
+		height: 134px;
+		float: left;
+		margin-right: 20px;
+	}
+	.searchList li h1{
+		font-size: 18px;
+		color: #373B3F;
+	}
+	.searchList li span{
+		float: left;
+		width: 52px;
+		height: 20px;
+		text-align: center;
+		line-height: 16px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border: 1px solid #FF893A;
+		font-size: 14px;
+		color: #FF893A;
+		letter-spacing: 0;
+		margin: 16px 32px 22px 0;
+	}
+	.searchList li h2{
+		overflow: hidden;
+	}
+	.searchList li h3{
+		font-size: 14px;
+		color: #5F666E;
+		letter-spacing: 0;
+		line-height: 28px;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
+</style>
+<div class="searchBox">
+	<h1 class="searchTitle">搜索结果</h1>
+	<h2 class="result">对于“<span class="type-in">疫苗</span>”的搜索没有找到结果</h2>
+	<div class="searchListBox">
+		<ul class="searchList">
+			<li>
+				<img src="static/images/img_1.png" alt="" />
+				<h1>得了HPV就一定是坏女孩么？</h1>
+				<h2><span>HPV</span><span>宫颈癌</span><span>感染</span>	</h2>
+				<h3>谈到HPV，许多人就认为一定是性生活不检点才会感染这种病毒。其实，即便只和男朋友一个人爱爱，也有可能感染HPV…</h3>
+			</li>
+			<li>
+				<img src="static/images/img_2.png" alt="" />
+				<h1>用数字说话：我国的宫颈癌流行病现状</h1>
+				<h2><span>HPV</span><span>宫颈癌</span><span>感染</span>	</h2>
+				<h3>在这个数字化的时代，几乎所有的事物都可以被量化。看明星的影响力要看他的粉丝数量，看自媒体的火爆度要看他是…</h3>
+			</li>
+			<li>
+				<img src="static/images/img_3.png" alt="" />
+				<h1>一个细胞引发的“蝴蝶效应”</h1>
+				<h2><span>HPV</span><span>宫颈癌</span><span>感染</span>	</h2>
+				<h3>亚马逊河流的蝴蝶煽动了几下翅膀，美国德克萨斯就掀起了一场龙卷风；爱豆在北京开了场演唱会，上海的交通便陷入了…</h3>
+			</li>
+		</ul>
+		<div class="page2" style="width:500px;"></div>
+	</div>
+</div>
+<!--
+ * @Author: Arvay
+ * @Date:   2017年8月6日12:12:45
+ * @Last modified by:   Arvay
+ * @Last modified time: 2017年8月6日12:12:47
+ *-->
+<script type="text/javascript">
+	$('.page2').createPage(function(n){//分页
+},{
+	showTurn:false,//是否显示跳转,默认可以
+	showSumNum:false,//是否显示总页码
+	showNear:1,//显示当前页码前多少页和后多少页，默认2
+},{
+	"color":"#fff",//字体颜色
+	"borderColor":"#f00",//边线颜色
+	"currentColor":"#A3A3A3",//当前页码的字体颜色
+});
+</script>

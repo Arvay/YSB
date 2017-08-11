@@ -1,0 +1,77 @@
+.searchTitle {
+			overflow: hidden;
+			text-align: left;
+			font-size: 18px;
+			color: #373B3F;
+			margin-top: 32px;
+		}
+		
+		.result {
+			font-size: 18px;
+			color: #FF893A;
+			border-bottom: 1px solid #E5E5E5;
+			text-align: left;
+			line-height: 50px;
+			margin-left: 20px;
+		}
+		
+		.searchListBox {
+			overflow: hidden;
+			margin-top: 30px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding-left: 20px;
+		}
+		
+		.searchList li {
+			height: 134px;
+			width: 100%;
+			overflow: hidden;
+			float: left;
+			text-align: left;
+			margin-bottom: 50px;
+		}
+		
+		.searchList li img {
+			width: 238px;
+			height: 134px;
+			float: left;
+			margin-right: 20px;
+		}
+		
+		.searchList li h1 {
+			font-size: 18px;
+			color: #373B3F;
+		}
+		
+		.searchList li span {
+			float: left;
+			width: 52px;
+			height: 20px;
+			text-align: center;
+			line-height: 16px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border: 1px solid #FF893A;
+			font-size: 14px;
+			color: #FF893A;
+			letter-spacing: 0;
+			margin: 16px 32px 22px 0;
+		}
+		
+		.searchList li h2 {
+			overflow: hidden;
+		}
+		
+		.searchList li h3 {
+			font-size: 14px;
+			color: #5F666E;
+			letter-spacing: 0;
+			line-height: 28px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+		}
