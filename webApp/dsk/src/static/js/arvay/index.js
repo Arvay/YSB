@@ -49,6 +49,10 @@ $(function() {
 $(".homepage").click(function(){
 	SetHome('http://ccp.alihealth.cn/')
 });
+//搜索
+$(".search img").click(function(){
+	window.location.href = 'search.html'
+});
 	function SetHome(url) {
 		if(document.all) {
 			document.body.style.behavior = 'url(#default#homepage)';

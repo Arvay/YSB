@@ -2387,40 +2387,6 @@
 	right: 0
 }
 
-.hvr-underline-from-center {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px transparent;
-	position: relative;
-	overflow: hidden
-}
-
-.hvr-underline-from-center:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	left: 50%;
-	right: 50%;
-	bottom: 0;
-	background: #2098D1;
-	height: 4px;
-	-webkit-transition-property: left, right;
-	transition-property: left, right;
-	-webkit-transition-duration: .3s;
-	transition-duration: .3s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out
-}
-
-.hvr-underline-from-center:active:before,
-.hvr-underline-from-center:focus:before,
-.hvr-underline-from-center:hover:before {
-	left: 0;
-	right: 0
-}
-
 .hvr-underline-from-right {
 	display: inline-block;
 	vertical-align: middle;
@@ -2504,7 +2470,7 @@
 	left: 50%;
 	right: 50%;
 	top: 0;
-	background: #2098D1;
+	background: #FF893A;
 	height: 4px;
 	-webkit-transition-property: left, right;
 	transition-property: left, right;
@@ -2828,14 +2794,14 @@
 
 .hvr-shadow-radial:before {
 	bottom: 100%;
-	background: -webkit-radial-gradient(50% 150%, ellipse, rgba(0, 0, 0, .6) 0, transparent 80%);
-	background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, .6) 0, transparent 80%)
+	background: -webkit-radial-gradient(50% 150%, ellipse, #fff, transparent 80%);
+	background: radial-gradient(ellipse at 50% 150%, #fff, transparent 80%)
 }
 
 .hvr-shadow-radial:after {
 	top: 100%;
-	background: -webkit-radial-gradient(50% -50%, ellipse, rgba(0, 0, 0, .6) 0, transparent 80%);
-	background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, .6) 0, transparent 80%)
+	background: -webkit-radial-gradient(50% -50%, ellipse, #fff, transparent 80%);
+	background: radial-gradient(ellipse at 50% -50%, #fff, transparent 80%)
 }
 
 .hvr-shadow-radial:active:after,
