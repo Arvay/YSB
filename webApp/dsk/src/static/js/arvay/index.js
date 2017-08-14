@@ -13,13 +13,19 @@ $(function() {
 	//菜单光标位置恢复
 	$(".find_nav li").hover(function(){
 		$(this).fadeIn('a').addClass('navHover').siblings().removeClass('navHover');
-		$(this).find('.navList').addClass('flipInX');
+		$(this).find('.navList').slideDown(300);
 		$(this).siblings().find('.navList').removeClass('flipInX').hide();
-		$(this).find('i').fadeIn(100);
+		$(this).find('i').slideDown(300);
 		$(this).siblings().find('i').hide();
 	},function(){
 		$(this).find('i').hide();
 		$(this).find('.navList').removeClass('flipInX').hide();
+	});
+	$(".find_nav li").mouseover(function(){
+		$(this).addClass('hoverSpan')
+	});
+	$(".find_nav li").mouseout(function(){
+		$(this).removeClass('hoverSpan');
 	});
 	//网站地图.
 	$(".siteMap").click(function(){
