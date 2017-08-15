@@ -15,38 +15,49 @@ $(function() {
 	});
 	var player;
 	var hrefPage = window.location.search.split('=')[1];
-	if(hrefPage == '0') {
+	console.log(hrefPage)
+	var LiveUrl = 'http://ccp.alihealth.cn/static/images/xuanyi.mp4';
+	var player =  new TcPlayer('id_test_video', {
+			"mp4": LiveUrl,
+			"autoplay" : false,      //iOS下safari浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+			"width" :  '928',//视频的显示宽度，请尽量使用视频分辨率宽度
+			"height" : '522'//视频的显示高度，请尽量使用视频分辨率高度
+		});
+		if(hrefPage == '0') {
 		zhiboShow();
 		$(".liveNext h1").html("公益视频");
 		$(".liveTab li").eq(0).addClass('liveTabAdd').siblings().removeClass('liveTabAdd');
+		player.play();
 	} else {
-		zhiboHiden();
-		$(".liveNext").show();
-		$(".liveNext h1").html("公益直播");
+			zhiboHiden();
+			$(".liveNext").show();
+			$(".liveNext h1").html("公益直播");
+			$(".id_test_video").css('display','none');
 		$(".liveTab li").eq(1).addClass('liveTabAdd').siblings().removeClass('liveTabAdd');
 	};
-	setTimeout(function() {
-		player = new TcPlayer('id_test_video', {
-			"mp4": "http://ccp.alihealth.cn/static/images/news.mp4", //增加了一个flv的播放地址，用于PC平台的播放 请替换成实际可用的播放地址
-			"autoplay": true, //iOS下safari浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
-			"width": '928', //视频的显示宽度，请尽量使用视频分辨率宽度
-			"height": '522' //视频的显示高度，请尽量使用视频分辨率高度
-		});
-	}, 2000)
+//	$(".swiper-slide").click(function(){
+//		console.log($(this).index());
+//		if($(this).index()==0){
+//			LiveUrl = 'http://ccp.alihealth.cn/static/images/xuanyi.mp4';
+//		}else{
+//			LiveUrl = 'http://ccp.alihealth.cn/static/images/news.mp4'
+//		};
+//		$('video').prop('src', LiveUrl);
+//		player.play()
+//	});
 	$(".liveTab li").click(function() {
 		var index = $(this).index();
 		$(this).addClass('liveTabAdd').siblings().removeClass('liveTabAdd');
 		if(index == 0) {
 			zhiboShow();
 			$(".liveNext h1").html("公益视频");
+			player.play();
 		} else {
 			zhiboHiden();
 			$(".liveNext").show();
 			$(".liveNext h1").html("公益直播");
 		}
 	});
-	//观看视频
-	$(".liveNext,#id_test_video").show();
 	$(".liveRight li").click(function() {
 		mySwiper.update();
 		$(".liveRight").hide();

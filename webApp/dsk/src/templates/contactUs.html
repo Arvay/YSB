@@ -37,15 +37,15 @@
 								<span><a href="index.html">首页</a></span>
 							</li>
 							<li class="hvr-underline-from-center">
-								<span>活动资讯</span>
+								<span><a href="dskLive.html?page=0">活动资讯</a></span>
 								<div class="navList animated">
 									<a href="dskLive.html?page=0">公益视频</a>
-									<a href="dskLive.html?page=1">活动直播</a>
+									<!--<a href="dskLive.html?page=1">活动直播</a>-->
 								</div>
 								<i></i>
 							</li>
 							<li class="hvr-underline-from-center">
-								<span>知识课堂</span>
+								<span><a href="classroom.html?page=0">知识课堂</a></span>
 								<div class="navList animated">
 									<a href="classroom.html?page=0">宫颈癌概述</a>
 									<a href="classroom.html?page=1">宫颈癌预防</a>
@@ -76,10 +76,10 @@
 							<div class="map">
 								<h2>地理位置：</h2>
 								<img src="../static/images/map_img.png" />
-								<h3>报告处方药和疫苗相关不良事件请致电</h3>
+								<!--<h3>报告处方药和疫苗相关不良事件请致电</h3>
 								<h3>电话：4001833383，8008203383</h3>
 								<h3>消费保健品客户关系团队联系方式</h3>
-								<h3>电话：4009911165</h3>
+								<h3>电话：4009911165</h3>-->
 							</div>
 							<!--网站地图-->
 							<div class="comBox">
@@ -115,11 +115,11 @@
 									<h2><i></i></h2>
 									<h3><p></p>联系我们</h3>
 								</li>
-								<li>
+								<!--<li>
 									<h1>搜索</h1>
 									<h2><i></i></h2>
 									<a href="search.html"><h3><p></p>搜索</h3></a>
-								</li>
+								</li>-->
 							</div>
 
 						</div>
@@ -127,15 +127,7 @@
 				</div>
 			</div>
 		</div>
-		<footer>
-			<p>宫颈癌预防行动由中华预防医学会和葛兰素史克共同倡导发起，旨在科学普及宫颈癌防控基本知识，增强公众对宫颈癌的防控意识，促进宫颈癌发病率和死亡率的降低，提高女性健康水平</p>
-			<br>
-			<span>隐私设置</span>
-			<span>品牌使用规范</span>
-			<span>互联网药品信息服务资格证书：冀-非经营性-2015-0008</span>
-			<span>Copyright©2014-2017 阿里健康 版权所有 ICP 冀B2-20150173</span>
-			<span>冀ICP备15020852号-2</span>
-		</footer>
+		<footer></footer>
 	</body>
 	<script src="../static/js/common/jquery-1.9.1.js" charset="utf-8"></script>
 	<script src="../static/js/arvay/index.js" charset="utf-8"></script>
@@ -147,8 +139,15 @@
 	 *-->
 	<script type="text/javascript">
 		$(function(){
-			var isContact = localStorage.getItem('contact');
-			if(isContact == "true"){
+//			var isContact = localStorage.getItem('contact');
+//			if(isContact == "true"){
+//				$(".map").fadeIn(100);
+//				$(".contactUsRightTitle").html("联系我们")
+//				$(".comBox").hide();
+//				$(".contacM").addClass('contacListAdd').siblings().removeClass('contacListAdd');
+//			};
+			var href = window.location.search.split('=')[1];
+			if(href == '1'){
 				$(".map").fadeIn(100);
 				$(".contactUsRightTitle").html("联系我们")
 				$(".comBox").hide();

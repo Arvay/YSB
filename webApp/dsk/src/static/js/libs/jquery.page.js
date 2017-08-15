@@ -20,8 +20,8 @@
 		var args=this.args=$.extend({
 			pageCount:3,//总页码,默认10
 			current:1,//当前页码,默认1
-			showPrev:true,//是否显示上一页按钮
-			showNext:true,//是否显示下一页按钮
+			showPrev:false,//是否显示上一页按钮
+			showNext:false,//是否显示下一页按钮
 			showTurn:true,//是否显示跳转,默认显示
 			showSumNum:true,//是否显示总页码
 			showNear:2,//显示当前页码前多少页和后多少页，默认2

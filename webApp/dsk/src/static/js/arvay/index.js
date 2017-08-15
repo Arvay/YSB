@@ -1,3 +1,4 @@
+//nav
 $(function() {
 	//搜索
 	$('body').bind('input propertychange', function() {
@@ -5,10 +6,6 @@ $(function() {
 		$(".indexSearch").show();
 		$(".type-in").html(t);
 		$(".subnav,.footerNav,.indexLive,.indexBox,.contactUs,.indexFQA").hide();
-	});
-	//绑定菜单栏 划过事件
-	$(".hvr-underline-from-center").mouseover(function(){
-//		console.log('1')
 	});
 	//菜单光标位置恢复
 	$(".find_nav li").hover(function(){
@@ -29,13 +26,21 @@ $(function() {
 	});
 	//网站地图.
 	$(".siteMap").click(function(){
-		window.location.href = 'contactUs.html'
+		window.location.href = 'contactUs.html?page=0'
 		localStorage.setItem('contact','false');
 	});
 	//联系我们
 	$(".contact").click(function(){
-		window.location.href = 'contactUs.html';
+		window.location.href = 'contactUs.html?page=1';
 		localStorage.setItem('contact','true');
+	});
+	//常见问题
+	$(".more_icon2").click(function(){
+		window.location.href='FQA.html'
+	});
+	//知识课堂
+	$(".more_icon").click(function(){
+		window.location.href = "classroom.html?page=0"
 	});
 	//加入收藏
 	$(".addcollect").click(function() {
@@ -55,10 +60,12 @@ $(function() {
 $(".homepage").click(function(){
 	SetHome('http://ccp.alihealth.cn/')
 });
+//footer
+$("footer").load('footer.html');
 //搜索
-$(".search img").click(function(){
-	window.location.href = 'search.html'
-});
+//$(".search img").click(function(){
+//	window.location.href = 'search.html'
+//});
 	function SetHome(url) {
 		if(document.all) {
 			document.body.style.behavior = 'url(#default#homepage)';
