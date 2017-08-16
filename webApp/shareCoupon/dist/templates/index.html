@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>好友助力的积分</title>
+		<script src="../js/rem-c9fca754e2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui-a4fbab7d20.min.js"></script>
+		<link href="../css/mui-a203d5cbb8.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/main-8d580d9a22.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index-16d3903a31.css" />
+		<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+		<script src="../js/index-f1d1c2c344.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="banner"><img src="../images/banner.png"/></div>
+					<div class="userIco"><img class="xiantiao" src="../images/xiantiao.png"/><img class="userimg" src=""/></div>
+					<div class="userNum">小宝目前的积分：0</div>
+					<div class="clickBtn">助力小宝</div>
+					<div class="msg">助力好友拿积分，你同时会获得1积分鼓励</div>
+					<div class="content">
+						<div class="contentBackg"></div>
+						<div class="contentText">
+							<h1>您目前的积分0</h1>
+							<h2>赶紧分享此页面，邀请更多小伙伴，助力自己得更多积分，兑换更大优惠券</h2>
+							<h3>现在去兑换优惠券  ></h3>
+						</div>
+					</div>
+					<div class="msg2">
+						<img src="../images/xiantiao.png"/>
+						<h1>活动规则</h1>
+						<h2>1.分享此页面，好友助力后增加积分，积分可用于兑换优惠券，用于购课优惠，积分按照2:1兑换优惠券，比如10积分可兑换5元的优惠券，优惠券面值有5元、10元、20元、50元，分享越多，兑换的面值越大。注意同一个人的多次点击不会重复增加积分。<br />2.助力好友拿积分，好友将拿到两积分，你同时会得到1积分鼓励。</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		/**
+		 * @Author: Arvay
+		 * @Date:   2017年8月9日18:31:45
+		 * @Last modified by:   Arvay
+		 * @Last modified time: 2017年8月10日16:01:58
+		 */
+		document.addEventListener("touchmove", function(event) {
+			event.preventDefault();
+		}, false);
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: true, //是否竖向滚动
+			scrollX: false, //是否横向滚动
+			startX: 0, //初始化时滚动至x
+			startY: 0, //初始化时滚动至y
+			indicators: true, //是否显示滚动条
+			deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+			bounce: true //是否启用回弹
+		});
+		window.onload = function(){
+			mui('.contentText').on('tap','h3',function(){
+			  window.location.href = 'creditsExchange.html';
+			}) 
+		};
+	</script>
+
+</html>

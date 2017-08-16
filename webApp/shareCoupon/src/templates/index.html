@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>好友助力得积分</title>
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/main.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/animate.min.css"/>
+		<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div class="guild"><img src="../images/banner@2x.png"/></div>
+					<div class="banner animated flipInY"><img src="../images/banne.png"/></div>
+					<div class="userIcoName">
+						<div class="userIco"><img class="userimg" src=""/></div>
+						<div class="userName"></div>
+					</div>
+
+					<div class="clickBtn">助力小宝</div>
+					<div class="msg">助力好友拿积分，你同时会获得1积分鼓励</div>
+					<div class="content">
+						<div class="contentBackg"></div>
+						<div class="contentText">
+							<h1>您目前的积分<span class="myjf">0</span></h1>
+							<h2>赶紧分享此页面，邀请更多小伙伴，助力自己得更多积分，兑换更大优惠券！</h2>
+						</div>
+						<div class="conversion">
+							<h1>现在去兑换优惠券 >></h1>
+							<h2 class="animated ">点击前往</h2>
+						</div>
+					</div>
+					<div class="msg2 animated swing">
+						<!--<img src="../images/xiantiao.png"/>
+						<h1>活动规则</h1>-->
+						<h2>1.分享此页面，好友助力后增加积分，积分可用于兑换优惠券，用于购课优惠，积分按照2:1兑换优惠券，比如10积分可兑换5元的优惠券，优惠券面值有5元、10元、20元、50元，分享越多，兑换的面值越大。注意同一个人的多次点击不会重复增加积分。<br />2.助力好友拿积分，好友将拿到两积分，你同时会得到1积分鼓励。</h2>
+					</div>
+					<footer>
+						<ul>
+							<li>
+								<img class="footerList" src="../images/footer1.png"/>
+								<!--<img class="footerBtn" src="../images/footerBtn1.png"/>-->
+								<a href="http://www.yingshibao.com/course/courseDetail/722" class="footerBtn">查看详情</a>
+							</li>
+							<li>
+								<img class="footerList" src="../images/footer2.png"/>
+								<a href="http://www.yingshibao.com/course/courseDetail/723" class="footerBtn">查看详情</a>
+								<!--<img class="footerBtn" src="../images/footerBtn2.png"/>-->
+							</li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		/**
+		 * @Author: Arvay
+		 * @Date:   2017年8月9日18:31:45
+		 * @Last modified by:   Arvay
+		 * @Last modified time: 2017年8月10日16:01:58
+		 */
+		document.addEventListener("touchmove", function(event) {
+			event.preventDefault();
+		}, false);
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: true, //是否竖向滚动
+			scrollX: false, //是否横向滚动
+			startX: 0, //初始化时滚动至x
+			startY: 0, //初始化时滚动至y
+			indicators: true, //是否显示滚动条
+			deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+			bounce: true //是否启用回弹
+		});
+		window.onload = function(){
+			mui('.conversion').on('tap','h2',function(){
+			  window.location.href = 'creditsExchange.html';
+			}) 
+		};
+	</script>
+
+</html>

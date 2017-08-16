@@ -1,0 +1,235 @@
+.mui-content{
+	background: url(../images/background.png) no-repeat;
+	background-size: 100% 100%;
+}
+.banner{
+	width: 100%;
+	height: 2.67rem;
+}
+.guild{
+	width: 100%;
+	height: 2.08rem;
+}
+.guild img{
+	height: 100%;
+	width: 100%;
+}
+.banner img{
+	width: 6rem;
+	height: 1.56rem;
+	margin-top: 0.2rem;
+}
+.userIco{
+	position: relative;
+	width: 1.02rem;
+	height: 1.02rem;
+	float: left;
+}
+.userIco .userimg{
+	display: inline-block;
+	width: 0.98rem;
+	height: 0.98rem;
+	border-radius: 50%;
+	margin-top: 0.02rem;
+}
+.xiantiao{
+	position: absolute;
+	width: 4.4rem;
+	top: 0.52rem;
+	left: 1rem;
+}
+.userName{
+	overflow:hidden;
+	margin-top: 0.48rem;
+	margin-left: 0.2rem;
+	float: left;
+	width: 3.6rem;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size: 0.28rem;
+	color: #fff;
+	text-align: left;
+}
+.userNum{
+	font-size: 0.32rem;
+	color: #542A15;
+	margin-bottom: 0.1rem;
+}
+.clickBtn{
+	width: 2.8rem;
+	height: 0.74rem;
+	margin: 0.24rem auto 0.2rem;
+	font-size: 0.38rem;
+	line-height: 0.66rem;
+	background: url(../images/btnbaby.png);
+	background-size: 100% 100%;
+	color: #44bec8;
+}
+.msg{
+	font-size: 0.22rem;
+	color: #181818;
+}
+.userIcoName{
+	width: 4.86rem;
+	height: 1.1rem;
+	margin: 0 auto;
+	background: url(../images/touxiang.png);
+	background-size: 100% 100%;
+}
+.parList img{
+	width: 100%;
+	float: left;
+}
+.content{
+	position: relative;
+	width: 100%;
+	height: 2.3rem;
+	margin-top: 0.24rem;
+}
+.contentBackg{
+	position: absolute;
+	height: 100%;
+	width: 5.4rem;
+	top: 0;
+	left: 50%;
+	margin-left: -2.7rem;
+	background: #fff;
+	opacity: .74;
+	border-radius: 0.1rem;
+}
+.contentText{
+	position: absolute;
+	height: 100%;
+	width: 5.74rem;
+	padding: 0.24rem 0.44rem 0 0.44rem;
+	top: 0;
+	left: 50%;
+	margin-left: -2.87rem;
+}
+.conversion{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 0.3rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0.6rem;
+	width: 100%;
+	
+}
+.conversion h1{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 0.1rem;
+	border: 1px solid #000;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	font-size: 0.3rem;
+	padding-left: 0.4rem;
+	color: #fff;
+	line-height: 0.56rem;
+	background: #44bec8;
+}
+.conversion h2{
+	position: absolute;
+	right: 0.3rem;
+	top: -0.14rem;
+	width: 2.06rem;
+	height: 0.74rem;
+	background: url(../images/duihuanBtn.png);
+	background-size: 100% 100%;
+	line-height: 0.7rem;
+	font-size: 0.3rem;
+	color: #44BEC8;
+}
+.contentText h1{
+	font-size: 0.32rem;
+	color: #333;
+	text-align: left;
+}
+.contentText h2{
+	color: #333;
+	font-size: 0.24rem;
+	line-height: 0.41rem;
+	text-align: left;
+	margin-top: 0.14rem;
+}
+.contentText h3{
+	font-size: 0.2rem;
+	color: #f65e4b;
+	margin-top: 0.2rem;
+	text-align: left;
+}
+.msg2{
+	width: 5.8rem;
+	height: 3.02rem;
+	position: relative;
+	margin-top: 0.32rem;
+	margin-left: 0.3rem;
+	padding: 0 0.2rem;
+	margin-bottom: 0.2rem;
+	background: url(../images/guize.png);
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.msg2 img{
+	position: absolute;
+	width: 4.44rem;
+	top: 0.06rem;
+	left: 50%;
+	margin-left: -2.22rem;
+}
+.msg2 h1{
+	font-size: 0.24rem;
+	color: #fff;
+	margin-bottom: 0.24rem;
+}
+.msg2 h2{
+	font-size: 0.2rem;
+	color: #fefefe;
+	line-height: 0.3rem;
+	text-align: left;
+	margin-top: 0.78rem;
+}
+footer{
+	position: relative;
+	float: left;
+	width: 100%;
+	background: #FFF;
+}
+footer a{
+	text-decoration: none;
+	outline: none;
+}
+footer li{
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 3.5rem;
+	margin-top: 0.06rem;
+}
+.footerList{
+	width: 100%;
+	height: 100%;
+}
+.footerBtn{
+	font-size: 0.3rem;
+	color: #fff;
+	position: absolute;
+	height: 0.53rem;
+	width: 2.17rem;
+	background: url(../images/footerBtn1.png);
+	background-size: 100% 100%;
+	bottom: 0.1rem;
+	left: 50%;
+	line-height: 0.53rem;
+	margin-left: -1.08rem;
+}
+footer li:nth-child(2) a{
+	background: url(../images/footerBtn2.png);
+	background-size: 100% 100%;
+}
