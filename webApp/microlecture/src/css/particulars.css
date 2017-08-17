@@ -179,3 +179,55 @@ body,html,.mui-content{
 .chinese{
 	margin-top: 0.31rem;
 }
+.mbTitle{
+	width: 100%;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	text-align: center;
+	font-size: 0.28rem;
+	color: #333333;
+	margin: 0.31rem 0 0.29rem 0;
+}
+.commentList li{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	border-radius: 0.1rem;
+	padding: 0 0 0.25rem 0;
+	margin-bottom: 0.14rem;
+}
+.mes{
+	width: 100%;
+	height: 0.64rem;
+}
+.mes img{
+	width: 0.52rem;
+	height: 0.52rem;
+	float: left;
+	border-radius: 50%;
+	margin: 0.12rem 0 0 0.15rem;
+}
+.mes span{
+	display: block;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	font-size: 0.22rem;
+	color: #333333;
+	float: left;
+	margin: 0.12rem 0 0 0.12rem;
+}
+.commentList li p{
+	display: inline-block;
+	margin: 0.08rem 0.44rem 0.16rem 0.79rem;
+	text-align: left;
+	color: #333333;
+}
+.mesTime{
+	display: block;
+	height: 0.18rem;
+	line-height: 0.18rem;
+	font-size: 0.18rem;
+	color: #4d4d4d;
+	margin-left: 0.79rem;
+	text-align: left;
+}
