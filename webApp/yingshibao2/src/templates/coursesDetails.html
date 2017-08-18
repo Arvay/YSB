@@ -1,0 +1,88 @@
+<!--
+ * @Author: Arvay
+ * @Date:   2017年8月3日22:31:36
+ * @Last modified by:   Arvay
+ * @Last modified time: 2017年8月3日22:31:43
+ *-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>全部课程</title>
+		<script src="../static/js/common/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../static/css/common/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/arvay/coursesDetails.css" />
+		<script src="../static/js/common/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+		<script src="../static/js/arvay/coures.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<div id="main">
+						<div class="banner">
+							<div class="bannerBox"></div>
+							<div class="bannerText">
+								<h1>刘彬【考研冲刺班】</h1>
+								<h2>跟着老司机备考考研冲刺</h2>
+							</div>
+						</div>
+						<div class="teacher">
+							<h1>老师简介</h1>
+							<h2>10年老司机，金牌押题王，词汇翻译教学清楚。惊人的超高押题命中率，授课学员数十万，好评如潮</h2>
+						</div>
+						<div class="tab">
+							<span class="tabLeft pitchOn">最新更新</span>
+							<span class="tabRight">课程简介</span>
+						</div>
+						<div class="tabList">
+							<ul>
+								<li>
+									<h1>词汇精讲第一节</h1>
+									<h2>
+										<span class="number"><img src="../static/images/shouting.png"/>收听1000次</span>
+										<span class="day">2017/7/27</span>
+									</h2>
+									<img class="rightGo" src="../static/images/you.svg" alt="" />
+								</li><li>
+									<h1>词汇精讲第一节</h1>
+									<h2>
+										<span class="number"><img src="../static/images/shouting.png"/>收听1000次</span>
+										<span class="day">2017/7/27</span>
+									</h2>
+									<img class="rightGo" src="../static/images/you.svg" alt="" />
+								</li><li>
+									<h1>词汇精讲第一节</h1>
+									<h2>
+										<span class="number"><img src="../static/images/shouting.png"/>收听1000次</span>
+										<span class="day">2017/7/27</span>
+									</h2>
+									<img class="rightGo" src="../static/images/you.svg" alt="" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer><span>订阅</span></footer>
+	</body>
+	<script type="text/javascript">
+		document.addEventListener("touchmove", function(event) {//阻止默认滚动
+			event.preventDefault();
+		}, false);
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: true, //是否竖向滚动
+			scrollX: false, //是否横向滚动
+			startX: 0, //初始化时滚动至x
+			startY: 0, //初始化时滚动至y
+			indicators: true, //是否显示滚动条
+			deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+			bounce: true //是否启用回弹
+		})
+	</script>
+
+</html>

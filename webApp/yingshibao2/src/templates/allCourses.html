@@ -1,0 +1,84 @@
+<!--
+ * @Author: Arvay
+ * @Date:   2017年8月3日21:10:15
+ * @Last modified by:   Arvay
+ * @Last modified time: 2017年8月3日21:10:18
+ *-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>全部课程</title>
+		<script src="../static/js/common/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../static/css/common/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/arvay/allCourses.css" />
+		<script src="../static/js/common/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://www.jq22.com/jquery/jquery-1.9.1.js"></script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="coursesList">
+						<li>
+							<img class="coursesIco" src="http://img1.imgtn.bdimg.com/it/u=3871721423,1529703198&fm=26&gp=0.jpg" alt="" />
+							<span class="labelManey">付费</span>
+							<div class="rightTop">
+								<h1>【考研冲刺班】刘彬</h1>
+								<h2>&nbsp;&nbsp;助你考研成功</h2>
+							</div>
+							<div class="rightBott">
+								<h1>今日更新</h1>
+								<h2>第十二节   词汇精讲</h2>
+								<h3>订阅</h3>
+							</div>
+						</li><li>
+							<img class="coursesIco" src="http://img1.imgtn.bdimg.com/it/u=3871721423,1529703198&fm=26&gp=0.jpg" alt="" />
+							<span class="labelManey">付费</span>
+							<div class="rightTop">
+								<h1>【考研冲刺班】刘彬</h1>
+								<h2>&nbsp;&nbsp;助你考研成功</h2>
+							</div>
+							<div class="rightBott">
+								<h1>今日更新</h1>
+								<h2>第十二节   词汇精讲</h2>
+								<h3>订阅</h3>
+							</div>
+						</li><li>
+							<img class="coursesIco" src="http://img1.imgtn.bdimg.com/it/u=3871721423,1529703198&fm=26&gp=0.jpg" alt="" />
+							<span class="labelManey">付费</span>
+							<div class="rightTop">
+								<h1>【考研冲刺班】刘彬</h1>
+								<h2>&nbsp;&nbsp;助你考研成功</h2>
+							</div>
+							<div class="rightBott">
+								<h1>今日更新</h1>
+								<h2>第十二节   词汇精讲</h2>
+								<h3>订阅</h3>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		document.addEventListener("touchmove", function(event) {//阻止默认滚动
+			event.preventDefault();
+		}, false);
+		mui('.mui-scroll-wrapper').scroll({
+			scrollY: true, //是否竖向滚动
+			scrollX: false, //是否横向滚动
+			startX: 0, //初始化时滚动至x
+			startY: 0, //初始化时滚动至y
+			indicators: true, //是否显示滚动条
+			deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+			bounce: true //是否启用回弹
+		})
+	</script>
+
+</html>

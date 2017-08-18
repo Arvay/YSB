@@ -1,0 +1,165 @@
+/*
+ * @Author: Arvay
+ * @Date:   2017年8月3日22:33:07
+ * @Last modified by:   Arvay
+ * @Last modified time: 2017年8月3日22:33:15
+ * */
+body{text-align:center;margin:0 auto;padding:0;font-size:12px;}
+div,form,ul,ol,li,span,p,dl,dd,dt{margin:0;padding:0;border:0;}
+img,a img{border:0;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}
+ul,ol,li{list-style:none}
+body,html,.mui-content{
+	background: #edf3ed;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.mui-scroll{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0.2rem 0.22rem;
+}
+#main{
+	width: 100%;
+	background: #fff;
+	border-radius: 0.1rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0.16rem 0.2rem;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	height: 2.72rem;
+	border-radius: 0.1rem;
+	background: url(http://img1.imgtn.bdimg.com/it/u=2547349950,627091177&fm=26&gp=0.jpg);
+	background-size: 100% 100%;
+}
+.bannerBox{
+	position: absolute;
+	height: 0.68rem;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	opacity: .5;
+	background: #000;
+	border-bottom-left-radius: 0.1rem;
+	border-bottom-right-radius: 0.1rem;
+}
+.bannerText{
+	position: absolute;
+	bottom: 0.04rem;
+	left: 0.24rem;
+}
+.bannerText h1{
+	font-size: 0.28rem;
+	color: #fff;
+	margin-bottom: 0.08rem;
+	text-align: left;
+}
+.bannerText h2{
+	font-size: 0.2rem;
+	color: #fff;
+	text-align: left;
+}
+.teacher{
+	margin-top: 0.3rem;
+}
+.teacher h1{
+	margin-left: 0.06rem;
+	margin-bottom: 0.16rem;
+	font-size: 0.28rem;
+	color: #4B4B4B;
+	text-align: left;
+}
+.teacher h2{
+	margin-left: 0.06rem;
+	font-size: 0.2rem;
+	color: #686868;
+	line-height: 0.3rem;
+	text-align: left;
+}
+.tab{
+	width: 100%;
+	height: 0.6rem;
+	margin-top: 0.34rem;
+	border-radius: 0.1rem;
+	overflow: hidden;
+}
+.tab span{
+	float: left;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	line-height: 0.6rem;
+	color: #4B4B4B;
+	font-size: 0.24rem;
+	background: #edf3ed;
+}
+.pitchOn{
+	background: #6ad969 !important;
+	color: #fff !important;
+}
+.tabList li{
+	position: relative;
+	border-radius: 0.1rem;
+	width: 100%;
+	height: 1.36rem;
+	background: #edf3ed;
+	margin-top: 0.18rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0.26rem 0.24rem 0.2rem 0.34rem;
+}
+.tabList h1{
+	font-size: 0.26rem;
+	color: #4B4B4B;
+	text-align: left;
+}
+.tabList h2{
+	text-align: left;
+	font-size: 0.18rem;
+	color: #72db71;
+	margin-top: 0.44rem;
+}
+.tabList span{
+	text-align: left;
+}
+.number img{
+	display: inline-block;
+	margin-right: 0.14rem;
+	width: 0.23rem;
+	height: 0.23rem;
+}
+.day{
+	display: inline-block;
+	margin-left: 2rem;
+}
+.rightGo{
+	position: absolute;
+	right: 0.1rem;
+	top: 50%;
+	margin-top: -0.27rem;
+}
+footer{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 0.22rem;
+	position: fixed;
+	bottom: 0.34rem;
+	width: 100%;
+}
+footer span{
+	display: inline-block;
+	width: 100%;
+	line-height: 0.56rem;
+	font-size: 0.3rem;
+	color: #fff;
+	background: #6ad969;
+	border-radius: 50px;
+}
