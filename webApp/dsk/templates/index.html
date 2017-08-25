@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>宫颈癌预防行动</title>
+		<meta name="keywords" content="宫颈癌预防行动、宫颈癌、hpv、宫颈癌疫苗、疫苗上市、疫苗、上市、防癌疫苗、二价疫苗、预防宫颈癌、宫颈癌预防、中华预防医学会、葛兰素史克、女性健康、郭采洁、科普、医学、癌症、接种疫苗、感染、病毒、恶性肿瘤、手机淘宝"/>
+		<meta name="description" content="“宫颈癌预防行动”旨在科学普及宫颈癌防控基本知识，增强公众对宫颈癌的防控意识，促进宫颈癌发病率和死亡率的降低，提高女性健康水平。">
+	    <meta name="mobile-agent" content="format=html5; url=http://ccp.alihealth.cn">
+		<!-- 引入样式 -->
+		<link href="favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="../static/css/arvay/index-666772c58a.css">
+		<link rel="stylesheet" href="../static/css/common/animate-2f05da645a.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/arvay/hover-min-b9f6534dc3.css"/>
+	</head>
+	<style type="text/css">
+		.find_nav li:nth-child(1) span a{color: #fff !important;}
+		.find_nav li:nth-child(1){	border-color: #FF893A;}
+	</style>
+	<body>
+		<div id="app">
+			<div class="header"></div>
+
+			<div class="main">
+				<div class="subnav">
+					<ul class="leftTab">
+						<li v-for="(site,index) in sites" :class={ 'leftTabLiAfter':index==0} @click="addClassFun(index)">
+							<span :class={ 'leftTabAfter':index==x}>{{site.text}}</span>
+						</li>
+					</ul>
+					<div class="list">
+						<ul v-if="listShow" class="journalism">
+							<li v-for="i in list">
+								<h1>{{i.title}}<span>{{i.note}}</span></h1>
+								<h2>{{i.text}}</h2>
+							</li>
+							<img class="more_icon" src="../static/images/more_icon.png" alt="">
+						</ul>
+						<div v-else class="videoBox">
+							<img src="../static/images/film_img.png" alt="">
+							<img class="play_icon" src="../static/images/play_icon.png" alt="">
+						</div>
+					</div>
+					<div class="rightList1">
+						<h1>知识课堂</h1>
+						<img class="lecture" src="../static/images/home_lecture_icon.png" alt="">
+						<ul>
+							<li class="summarize"><a href="classroom.html?page=0">宫颈癌概述</a></li>
+							<li class="prevent"><a href="classroom.html?page=1">宫颈癌预防</a></li>
+							<img class="more_icon" src="../static/images/more_icon.png" alt="">
+						</ul>
+					</div>
+				</div>
+				<div class="footerNav">
+					<ul>
+						<li style="position: relative;">
+							<div class="leftNav">
+								<h1 class="cjwt">常见问题</h1>
+								<img src="../static/images/home_book_icon.png" alt="">
+							</div>
+							<div class="leftNav2">
+								<span>Q:什么是宫颈癌？</span><br>
+								<span class="span2">A:宫颈癌是指发生在子<br>宫颈的鳞状上皮细胞...</span>
+							</div>
+							<div class="leftNav2 leftNav3">
+								<span>Q:什么是宫颈癌前病变？</span><br>
+								<span class="span2">A:宫颈癌前病变又称宫<br>颈上皮内瘤变...</span>
+							</div>
+							<img class="more_icon2" src="../static/images/more_icon.png" alt="">
+						</li>
+						<li>
+							<h1>官方微信</h1>
+							<img class="wechat" src="../static/images/home_wechat_qr.png" alt="">
+							<h2>更多信息</h2>
+							<div class="footerSearcg">
+								<span class="label"><img src="../static/images/search_taobao_img.png"/></span>
+								<!--<span class="contentSearch">趁年轻&nbsp;&nbsp;预防宫颈癌</span>
+								<img class="searchBtn" src="../static/images/home_search_button.png" alt="">-->
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+	<script src="../static/js/common/jquery-1-e4ff02d3ba.9.1.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".header").load('header.html')
+	</script>
+	<script src="../static/js/arvay/index-3d32611247.js" charset="utf-8"></script>
+</html>
