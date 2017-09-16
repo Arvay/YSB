@@ -1,0 +1,63 @@
+body{font-family:"微软雅黑","Arial Narrow",HELVETICA;text-align:center;margin:0 auto;padding:0;font-size:12px;}
+div,form,ul,ol,li,span,p,dl,dd,dt{margin:0;padding:0;border:0;}
+img,a img{border:0;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}
+ul,ol,li{list-style:none}
+header{
+	width: 1024px;
+	margin: 0 auto;
+}
+.clickOpacity{
+	opacity: 1;
+}
+.hoverOpacity{
+	opacity: .8;
+}
+.hoverO:hover{
+	opacity: .8;
+	cursor: pointer;
+}
+.hoverBottomBorder:hover{
+	border-bottom: 1px solid #24CF62;
+}
+.hoverBottomBorder:focus{
+	border-bottom: 1px solid #24CF62 !important;
+}
+.headerBox{
+	width: 1024px;
+	height: 80px;
+	float: left;
+}
+.k12Nav{
+	float: left;
+	margin-left: 60px;
+}
+.k12Nav li{
+	float: left;
+	cursor: pointer;
+	margin-right: 58px;
+	color: #454545;
+	font-size: 20px;
+	line-height: 80px;
+}
+.k12Nav li a{
+	color: #454545;
+	text-decoration: none;
+}
+.k12Nav li:nth-child(1){
+	margin-right: 50px;
+}
+.loginBox{
+	width: 120px;
+	height: 32px;
+	float: right;
+	font-size: 20px;
+	color: #fff;
+	background: #24CF62;
+	border-radius: 16px;
+	margin: 24px 32px 0 0;
+	line-height: 32px;
+}
+.login,.enrol{
+	cursor: pointer;
+}

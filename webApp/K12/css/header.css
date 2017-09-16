@@ -1,0 +1,138 @@
+.k12Logo{
+	float: left;
+	width: 120px;
+	height: 38px;
+	background: url(../images/log.png);
+	margin: 20px 0 0 36px;
+}
+.k12Nav li a:hover{
+	color: #24CF62 !important;
+}
+.modal-content{
+	width: 350px;
+	height: 438px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	overflow: hidden;
+}
+.modal-dialog{
+	width: 350px;
+	margin-top: 176px;
+}
+.lodingTitle{
+	width: 100%;
+	height: 94px;
+	background: #24CF62;
+}
+.lodingTitle img{
+	margin-top: 24px;
+}
+.modalEnrol{
+	display: none;
+}
+.modalEnrol input,.modalLogin input{
+	width: 234px;
+	margin: 0 auto;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	border-radius: 0;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+#enrolPassword,#enrolCode,#loginPassword{
+	margin-top: 20px;
+}
+#enrolName,#loginName{
+	margin-top: 60px;
+}
+.mindPassword .checkbox2{
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #CCCCCC;
+	width: 18px;
+	height: 18px;
+	float: left;
+	border-radius: 50%;
+	margin-left: 57px;
+}
+.checkbox2 i{
+	float: left;
+	width: 10px;
+	height: 10px;
+	background: #24CF62;
+	border-radius: 50%;
+	margin: 3px 0 0 2.5px ;
+}
+.loginCodeR{
+	position: relative;
+	display: none;
+}
+.getCode{
+	position: absolute;
+	right: 60px;
+	bottom: 6px;
+	font-size: 14px;
+	color: #24CF62;
+}
+.automatic span{
+	color: #818181;
+	float: left;
+	margin-left: 10px;
+}
+.loginBtn{
+	overflow: hidden;
+	float: left;	
+	width: 270px;
+	height: 35px;
+	background: #24CF62;
+	border-radius: 50px;
+	margin-top: 36px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 36px;
+	margin-left: 40px;
+}
+.enrolBtn{
+	cursor: pointer;
+	margin: 0 auto;
+	margin-top: 46px;
+	width: 270px;
+	height: 34px;
+	background: #24CF62;
+	border-radius: 17px;
+	font-size: 20px;
+	color: #fff;
+	line-height: 36px;
+}
+.enrolBtn:hover{
+	opacity: .9;
+}
+.enrolBtnFooter{
+	font-size: 14px;
+	color: #818181;
+	margin-top: 26px;
+}
+.enrolBtnFooter span{
+	cursor: pointer;
+	color: #24CF62;
+}
+.codeLogin,.goEmrol {
+	font-size: 14px;
+	color: #818181;
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin-top: 16px;
+}
+.codeLogin span,.goEmrol span{
+	cursor: pointer;
+	color: #24CF62;
+}
+.goEmrol{
+	margin-top: 4px;
+}
