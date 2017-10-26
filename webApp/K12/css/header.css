@@ -29,7 +29,7 @@
 .lodingTitle img{
 	margin-top: 24px;
 }
-.modalEnrol{
+.modalLogin,.modalEnrol{
 	display: none;
 }
 .modalEnrol input,.modalLogin input{
@@ -135,4 +135,54 @@
 }
 .goEmrol{
 	margin-top: 4px;
+}
+.userInfo{
+	float: right;
+	height: 100%;
+	line-height: 80px;
+	font-size: 20px;
+}
+.myCourse{
+	cursor: pointer;
+}
+.userImg{
+	position: relative;
+	cursor: pointer;
+	float: right;
+	margin-top: 18px;
+	margin-left: 22px;
+	border-radius: 50%;
+	width: 46px;
+	height: 46px;
+	background:darkcyan;
+}
+.userList{
+	display: none;
+	position: absolute;
+	width: 128px;
+	top: 48px;
+	left: -30px;
+	overflow: hidden;
+	border-radius: 4px;
+	padding: 0 12px;
+}
+.userList li{
+	width: 100%;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	border-bottom: 1px solid #959595;
+	text-align: left;
+}
+.userList li:nth-last-child(1){
+	border-bottom: none;
+}
+.userList img{
+	display: inline-block;
+	margin-right: 12px;
+	margin-left: 8px;
+}
+.userList a{
+	font-size: 14px;
+	color: #474747;
 }

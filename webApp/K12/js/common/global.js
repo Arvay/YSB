@@ -4,9 +4,7 @@
  * @Last modified by:   Arvay
  * @Last modified time: 2017年9月8日21:38:08
  */
-var ajaxUrl = 'http://wk.yingshibao.com/weChat/course/';
-var ajaxPay = 'http://wk.yingshibao.com/payment/toPay';
-var code = GetQueryString('code');
+var ajaxUrl = 'http://k12.yingshibao.com/';
 var deBug = true;
 function $ajax(url, data, successfn) {
     $.ajax({
