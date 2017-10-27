@@ -6,6 +6,10 @@
  */
 $(function() {
 	var a = false;
+	 $("[data-toggle='tooltip']").tooltip()
+	 $("input").click(function(){
+		$('#enrolName').tooltip('hide')
+	 })
 	/**
 	 * 切换登陆方式
 	 */
@@ -18,7 +22,7 @@ $(function() {
 		}
 	});
 	/**
-	 * 注册
+	 * 注册显示框
 	 */
 	$(".loginBox").on('click','span',function(){
 		var i = $(this).index();
@@ -45,8 +49,25 @@ $(function() {
 	 */
 	var isCountdown=false;
 	$(".getCode").click(function(){
+		var phone = $("#enrolName").val();
+		if(phone == ''){
+			$('#enrolName').tooltip('show')
+			$(".tooltip-inner").html('手机号不能为空')
+			return false;
+		}else if(isPhoneNo(phone) == false){
+			$('#enrolName').tooltip('show')
+			$(".tooltip-inner").html('手机号格式错误')
+			return false;
+		}
+		var postData = {
+			phone:phone
+		}
+		$ajax('pc/login/getRegPhoneMsg',JSON.stringify(postData),function(e){
+			console.log(e)
+		})
 		codeTime()//验证码倒计时
 	});
+	
 	/**
 	 * 菜单
 	 */

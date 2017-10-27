@@ -5,6 +5,7 @@
  * @Last modified time: 2017年9月20日15:32:42
  */
 $(function() {
+	$.message('成功');
 	/**
 	 * 加载头部
 	 */

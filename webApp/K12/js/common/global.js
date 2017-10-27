@@ -29,6 +29,11 @@ function $ajax(url, data, successfn) {
         }
     });
 }
+// 验证手机号
+function isPhoneNo(phone) { 
+ var pattern = /^1[34578]\d{9}$/; 
+ return pattern.test(phone); 
+}
 function W_deBug(e) {
     if (deBug == true) {
         console.log(e);

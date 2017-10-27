@@ -61,3 +61,9 @@ header{
 .login,.enrol{
 	cursor: pointer;
 }
+.tooltip-inner{
+	background-color: #24CF62 !important;
+}
+.tooltip.bottom .tooltip-arrow{
+	border-bottom-color: #24CF62 !important;
+}
