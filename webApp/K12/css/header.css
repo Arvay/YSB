@@ -8,6 +8,10 @@
 .k12Nav li a:hover{
 	color: #24CF62 !important;
 }
+header{
+	clear: both;
+	margin: 0 auto;
+}
 .modal-content{
 	width: 350px;
 	height: 438px;
@@ -142,6 +146,7 @@
 .userInfo{
 	float: right;
 	display: none;
+	margin-right: 60px;
 	height: 100%;
 	line-height: 80px;
 	font-size: 20px;

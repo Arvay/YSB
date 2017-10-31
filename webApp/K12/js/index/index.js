@@ -15,4 +15,5 @@ $(function() {
 	$(".ul4 li").click(function(){
 		$(this).addClass('ulFff').siblings().removeClass('ulFff');//添加状态样式
 	});
+	
 });
