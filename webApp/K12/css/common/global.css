@@ -48,6 +48,7 @@ header{
 	margin-right: 50px;
 }
 .loginBox{
+	display: none;
 	width: 120px;
 	height: 32px;
 	float: right;

@@ -141,6 +141,7 @@
 }
 .userInfo{
 	float: right;
+	display: none;
 	height: 100%;
 	line-height: 80px;
 	font-size: 20px;
@@ -157,23 +158,23 @@
 	border-radius: 50%;
 	width: 46px;
 	height: 46px;
-	background:darkcyan;
+	background-size: 100% 100% !important;
 }
 .userList{
 	display: none;
 	position: absolute;
 	width: 128px;
 	top: 48px;
-	left: -30px;
+	left: -42px;
 	overflow: hidden;
 	border-radius: 4px;
 	padding: 0 12px;
+	background: url(../images/bg.png);
 }
 .userList li{
 	width: 100%;
-	height: 40px;
 	float: left;
-	line-height: 40px;
+	line-height: 36px;
 	border-bottom: 1px solid #959595;
 	text-align: left;
 }
@@ -181,9 +182,9 @@
 	border-bottom: none;
 }
 .userList img{
+	float: left;
 	display: inline-block;
-	margin-right: 12px;
-	margin-left: 8px;
+	margin: 11px 12px 0px 8px;
 }
 .userList a{
 	font-size: 14px;

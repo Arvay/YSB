@@ -100,5 +100,38 @@ h1{
 	border: 1px solid #24CF62;
 	margin: 18px 0 0 0;
 }
+.courseList dt{
+	width: 100%;
+	height: 138px;
+	background: darkcyan;
+}
+.courseList dd{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 12px 12px 0 10px;
+}
+.courseList dd h2{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+	color: #5e5e5e;
+	letter-spacing: 2px;
+}
+.homePrice{
+	float: left;
+	margin-top: 26px;
+	font-size: 20px;
+	color: #24cf62;
+}
+.homeTip{
+	float: right;
+	margin-top: 30px;
+	color: #5e5e5e;
+	font-size: 14px;
+}
 
 

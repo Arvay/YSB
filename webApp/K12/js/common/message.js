@@ -15,7 +15,6 @@
  * 
  * type:success,error,info,warning
  */
-
 $.extend({
   message: function(options) {
       var defaults={
