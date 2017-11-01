@@ -33,6 +33,7 @@
 	border: 1px solid #eee;
 }
 .mainRight li{
+	cursor: pointer;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -61,7 +62,11 @@
 	box-sizing: border-box;
 	padding-left: 10px;
 	text-align: left;
+	font-size: 14px;
 	line-height: 32px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
 }
 .mainRight img{
 	width: 100%;

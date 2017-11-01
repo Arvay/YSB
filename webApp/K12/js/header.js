@@ -15,7 +15,7 @@ $(function() {
 	 * 手机号密码登陆
 	 */
 	$(".loginBtn ").click(function(e) {
-		rememb = $("input[type='checkbox']").is(':checked');//是否自动登陆
+		rememb = $("input[type='checkbox']").is(':checked'); //是否自动登陆
 		var phone = $("#loginName").val();
 		var password = $("#loginPassword").val();
 		if(phone == '') {
@@ -48,9 +48,9 @@ $(function() {
 				var avatar = e.data.avatar; //头像
 				var nickName = e.data.userName; // 账户昵称
 				var phone = e.data.phone; // 用户手机号
-				var userId = e.data.id;// 用户id
+				var userId = e.data.id; // 用户id
 				$('#myModal').modal('hide'); //登陆框隐藏
-				$(".userImg").css('background','url('+avatar+')')
+				$(".userImg").css('background', 'url(' + avatar + ')')
 				if(rememb) {
 					localStorage.setItem('avatar', avatar)
 					localStorage.setItem('nickName', nickName)
@@ -137,7 +137,7 @@ $(function() {
 	$(".nextLogin").click(function() {
 		modalShow.login()
 	});
-	$(".goHome").click(function(){
+	$(".goHome").click(function() {
 		window.location.href = 'index.html'
 	})
 	/**
@@ -169,7 +169,7 @@ $(function() {
 	/**
 	 * 退出登陆
 	 */
-	$(".logOut").click(function(){
+	$(".logOut").click(function() {
 		logOut()
 	});
 	/**
@@ -191,6 +191,12 @@ $(function() {
 			$(".modalEnrol").show(), $(".modalLogin").hide();
 		}
 	}
+	/**
+	 * 进入我的课程
+	 */
+	$("body").on('click', '.myCourse', function() {
+		window.location.href = 'myCourses.html'
+	})
 
 	function codeTime() {
 		var i = 60;

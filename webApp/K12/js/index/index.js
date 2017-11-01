@@ -25,12 +25,6 @@ $(function() {
 		$(this).addClass('ulFff').siblings().removeClass('ulFff'); //添加状态样式
 	});
 	/**
-	 * 进入我的课程
-	 */
-	$("body").on('click','.myCourse',function(){
-		window.location.href = 'myCourses.html'
-	})
-	/**
 	 * 进入详情
 	 * @param {Object} type
 	 */
