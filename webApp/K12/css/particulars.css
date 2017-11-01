@@ -1,0 +1,81 @@
+.main{
+	border-top: 1px solid #eee;
+	padding-top: 60px;
+	width: 1000px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.headerLeft{
+	width: 446px;
+	height: 256px;
+	float: left;
+	overflow: hidden;
+}
+.headerLeft img{
+	width: 100%;
+	height: 100%;
+}
+.headerRight{
+	float: left;
+	text-align: left;
+	margin-left: 60px;
+}
+.headerRight h1{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 26px;
+	color: #59595b;
+}
+.headerRight h2{
+	font-size: 14px;
+	color: #7e7e8d;
+	line-height: 30px;
+}
+.headerRight span{
+	display: inline-block;
+	width: 106px;
+	line-height: 36px;
+	background: #24CF62;
+	border-radius: 20px;
+	text-align: center;
+	color: #fff;
+	margin-top: 20px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.listBtn{
+	float: left;
+	width: 1000px;
+	background: #eee;
+}
+.mainBox{
+	float: left;
+	margin-top: 40px;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #eee;
+	border-top: 0;
+}
+.listBtnClick{
+	background: #fff;
+	border-top: 2px solid #24CF62;
+}
+.listBtn li{
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	width: 180px;
+	height: 100%;
+	font-size: 18px;
+	color: #9696a3;
+	line-height: 56px;
+}
+.contentBox{
+	width: 100%;
+	overflow: hidden;
+	float: left;
+}

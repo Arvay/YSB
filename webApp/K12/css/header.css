@@ -175,6 +175,7 @@ header{
 	border-radius: 4px;
 	padding: 0 12px;
 	background: url(../images/bg.png);
+	background-size: 100% 100%;
 }
 .userList li{
 	width: 100%;

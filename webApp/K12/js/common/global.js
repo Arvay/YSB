@@ -58,7 +58,6 @@ function GetQueryString(name) {
 	return null;
 }
 function showInfo(){
-	console.log(userId)
 	if(userId != '' && userId != null) {
 		$(".userInfo").show(); //用户信息菜单
 		$(".userImg").css('background','url('+avatar+')')

@@ -137,6 +137,9 @@ $(function() {
 	$(".nextLogin").click(function() {
 		modalShow.login()
 	});
+	$(".goHome").click(function(){
+		window.location.href = 'index.html'
+	})
 	/**
 	 * 验证码
 	 */
